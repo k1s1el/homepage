@@ -1,0 +1,26 @@
+.nav__list {
+    list-style-type: none;
+}
+
+.nav__listItem {
+    margin: 15px 0;
+}
+
+.nav__link {
+    color: white;
+    background-color: crimson;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav__link:focus {
+    outline: 2px solid currentColor;
+}
+
+.nav__link:hover {
+    background: #78A1BB;
+}
+
+.nav__link:active {
+    background: rgb(46, 161, 255);
+}
