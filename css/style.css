@@ -64,38 +64,3 @@ html {
     text-decoration: line-through;
     color: gray;
 }
-
-.tableContainer {
-    overflow-x: auto;
-}
-
-.gameTable {
-    border-collapse: collapse;
-    background-color: honeydew;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-.caption {
-    caption-side: bottom;
-    text-align: right;
-}
-
-.tableCell {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
-}
-
-.tableHeader {
-    color: white;
-    background: crimson;
-}
-
-.tableRow:nth-child(even) {
-    background: #eee;
-}
-
-.tableRow:hover {
-    background: #ddd;
-}

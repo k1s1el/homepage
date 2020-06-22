@@ -10,6 +10,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
     <link href="css/paragraph.css" rel="stylesheet">
+    <link href="css/gameTable.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -77,36 +78,36 @@
             <h2 class="main__subHeader">Ulubione gry</h2>
             <div class="tableContainer">
                 <table class="gameTable">
-                    <caption class="caption">Zestaw ulubionych gier</caption>
-                    <tr class="tableRow">
-                        <th class="tableCell tableHeader" scope="col">Platforma</th>
-                        <th class="tableCell tableHeader" scope="col">Tytuł</th>
-                        <th class="tableCell tableHeader" scope="col">Rok wydania</th>
-                        <th class="tableCell tableHeader" scope="col">Twórcy</th>
+                    <caption class="gameTable__caption">Zestaw ulubionych gier</caption>
+                    <tr class="gameTable__row">
+                        <th class="gameTable__cell gameTable__cell--header" scope="col">Platforma</th>
+                        <th class="gameTable__cell gameTable__cell--header" scope="col">Tytuł</th>
+                        <th class="gameTable__cell gameTable__cell--header" scope="col">Rok wydania</th>
+                        <th class="gameTable__cell gameTable__cell--header" scope="col">Twórcy</th>
                     </tr>
-                    <tr class="tableRow">
-                        <th class="tableCell tableHeader" scope="row">Playstation 4</th>
-                        <td class="tableCell">Gran Turismo Sport</td>
-                        <td class="tableCell">2017</td>
-                        <td class="tableCell">Polyphony Digital</td>
+                    <tr class="gameTable__row">
+                        <th class="gameTable__cell gameTable__cell--header" scope="row">Playstation 4</th>
+                        <td class="gameTable__cell">Gran Turismo Sport</td>
+                        <td class="gameTable__cell">2017</td>
+                        <td class="gameTable__cell">Polyphony Digital</td>
                     </tr>
-                    <tr class="tableRow">
-                        <th class="tableCell tableHeader" scope="row">Xbox One</th>
-                        <td class="tableCell">Forza Motorsport 6</td>
-                        <td class="tableCell">2015</td>
-                        <td class="tableCell">Turn 10 Studios</td>
+                    <tr class="gameTable__row">
+                        <th class="gameTable__cell gameTable__cell--header" scope="row">Xbox One</th>
+                        <td class="gameTable__cell">Forza Motorsport 6</td>
+                        <td class="gameTable__cell">2015</td>
+                        <td class="gameTable__cell">Turn 10 Studios</td>
                     </tr>
-                    <tr class="tableRow">
-                        <th class="tableCell tableHeader" scope="row">PC</th>
-                        <td class="tableCell">BioShock</td>
-                        <td class="tableCell">2007</td>
-                        <td class="tableCell">2K Boston</td>
+                    <tr class="gameTable__row">
+                        <th class="gameTable__cell gameTable__cell--header" scope="row">PC</th>
+                        <td class="gameTable__cell">BioShock</td>
+                        <td class="gameTable__cell">2007</td>
+                        <td class="gameTable__cell">2K Boston</td>
                     </tr>
-                    <tr class="tableRow">
-                        <th class="tableCell tableHeader" scope="row">PC</th>
-                        <td class="tableCell">Diablo 2</td>
-                        <td class="tableCell">2000</td>
-                        <td class="tableCell">Blizzard North</td>
+                    <tr class="gameTable__row">
+                        <th class="gameTable__cell gameTable__cell--header" scope="row">PC</th>
+                        <td class="gameTable__cell">Diablo 2</td>
+                        <td class="gameTable__cell">2000</td>
+                        <td class="gameTable__cell">Blizzard North</td>
                     </tr>
                 </table>
             </div>
@@ -142,11 +143,11 @@
         </section>
     </main>
     <footer class="footer">
-        <p class="main_sectionParagraph">
+        <p class="footer__paragraph">
             Dzięki za odwiedziny!
         </p>
-        <a class="link" href="mailto:mkisielewski25@gmail.com">mkisielewski25@gmail.com</a>
-        <a class="link" href="tel:+48.603333333"> 603 333 333</a>
+        <a class="footer__link" href="mailto:mkisielewski25@gmail.com">mkisielewski25@gmail.com</a>
+        <a class="footer__link" href="tel:+48.603333333"> 603 333 333</a>
     </footer>
 </body>
 
