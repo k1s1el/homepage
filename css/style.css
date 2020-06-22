@@ -36,14 +36,7 @@ html {
     margin: 15px auto;
 }
 
-.main__section, .footer {
-    border-radius: 7px;
-    padding: 15px;
-    text-align: justify;
-    background-color: #78A1BB;
-    box-shadow: 10px 10px 60px 0px rgba(158, 153, 158, 1);
-    margin-top: 50px;
-}
+
 
 .b, .strong, .i {
     background-color: rgba(189, 125, 42, 0.822);

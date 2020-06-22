@@ -1,0 +1,12 @@
+.main__section, .footer {
+    border-radius: 7px;
+    padding: 15px;
+    text-align: justify;
+    background-color: #78a1bb;
+    box-shadow: 10px 10px 60px 0px rgba(158, 153, 158, 1);
+    margin-top: 50px;
+}
+
+.main_sectionParagraph {
+    color: rgb(48, 28, 5);
+}
