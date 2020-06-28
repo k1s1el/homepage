@@ -1,11 +1,23 @@
-function welcome () {
-    console.log("Hello World!!")
-};
+{
+    const welcome = () => {
+        console.log("Hello World!!")
+    };
+    welcome();
+}
 
-welcome();
+
+const onChangeNameHeaderClick = () => {
+
+    name1.innerHTML = "Marcin Kisielewski";
+}
+const init = () => {
+    const button1 = document.querySelector(".button1");
+    button1.addEventListener("click", onChangeNameHeaderClick);
+}
+
+init();
 
 
-let button1 = document.querySelector(".button1");
 let button2 = document.querySelector(".button2");
 let button3 = document.querySelector(".button3");
 let button4 = document.querySelector(".button4");
@@ -14,9 +26,8 @@ let backgroundCol = document.querySelector(".body");
 let face1 = document.querySelector(".face1")
 let work1 = document.querySelector(".work1")
 
-button1.addEventListener("click", () => {
-    name1.innerHTML = "Marcin Kisielewski";
-});
+
+
 
 button2.addEventListener("click", () => {
     backgroundCol.classList.toggle("body2");
@@ -40,4 +51,5 @@ button4.addEventListener("click", () => {
     } else {
         button4.innerText = "Zwykły";
     }
-}); 
+});
+
