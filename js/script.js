@@ -1,63 +1,54 @@
-const welcome = () => {
-    console.log("Hello World!!")
-};
-
-welcome();
-
-const onChangeNameHeaderClick = () => {
-
-    name1.innerHTML = "Marcin Kisielewski";
-}
-
-const onToggleBackgroundClick = () => {
-
-    const backgroundCol = document.querySelector(".body");
-    backgroundCol.classList.toggle("body2");
-
-    if (backgroundCol.classList.contains("body2")) {
-        changeBackgroundButton.innerText = "Zmień tło na jaśniejsze";
-    }
-    else {
-        changeBackgroundButton.innerText = "Zmień tło na ciemniejsze";
+{//Welcome function
+    const welcome = () => {
+        console.log("Hello World!!")
     };
 
+    welcome();
 }
+{//Change name function
+    const onChangeNameHeaderClick = () => {
 
-const changeBackgroundButton = document.querySelector(".button2");
-changeBackgroundButton.addEventListener("click", onToggleBackgroundClick);
-
-const init = () => {
+        name1.innerHTML = "Marcin Kisielewski";
+    };
+    const name1 = document.querySelector(".name1");
     const button1 = document.querySelector(".button1");
     button1.addEventListener("click", onChangeNameHeaderClick);
-
 }
+{//Toggle background function
+    const onToggleBackgroundClick = () => {
 
-init();
+        const backgroundCol = document.querySelector(".body");
+        backgroundCol.classList.toggle("body2");
 
-
-
-let button3 = document.querySelector(".button3");
-let button4 = document.querySelector(".button4");
-let name1 = document.querySelector(".name1");
-
-let face1 = document.querySelector(".face1")
-let work1 = document.querySelector(".work1")
-
-
-
-
-
-
-button3.addEventListener("click", () => {
-    work1.classList.toggle("work2")
-});
-
-button4.addEventListener("click", () => {
-    face1.src = "https://i.ibb.co/G9wDLHZ/marcin-kisielewski2.jpg";
-    if (button4.innerText = "Zwykły") {
-        button4.innerText = "Niezwykły";
-    } else {
-        button4.innerText = "Zwykły";
+        if (backgroundCol.classList.contains("body2")) {
+            changeBackgroundButton.innerText = "Zmień tło na jaśniejsze";
+        }
+        else {
+            changeBackgroundButton.innerText = "Zmień tło na ciemniejsze";
+        };
+    };
+    const changeBackgroundButton = document.querySelector(".button2");
+    changeBackgroundButton.addEventListener("click", onToggleBackgroundClick);
+}
+{//Change first paragraph text background
+    const onChangeTextBackgroundClick = () => {
+        work1.classList.toggle("work2")
     }
-});
 
+    const textBackgroundButton = document.querySelector(".button3");
+    const work1 = document.querySelector(".work1")
+    textBackgroundButton.addEventListener("click", onChangeTextBackgroundClick);
+}
+{//Change image function
+    const onChangeImageClick = () => {
+        face1.src = "https://i.ibb.co/G9wDLHZ/marcin-kisielewski2.jpg";
+        if (changeImageButton.innerText = "Zwykły") {
+            changeImageButton.innerText = "Niezwykły";
+        } else {
+            changeImageButton.innerText = "Zwykły";
+        }
+    };
+    const changeImageButton = document.querySelector(".button4");
+    const face1 = document.querySelector(".face1")
+    changeImageButton.addEventListener("click", onChangeImageClick);
+}
