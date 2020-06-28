@@ -1,4 +1,9 @@
-console.log("Hello!!")
+function welcome () {
+    console.log("Hello World!!")
+};
+
+welcome();
+
 
 let button1 = document.querySelector(".button1");
 let button2 = document.querySelector(".button2");
